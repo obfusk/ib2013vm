@@ -74,7 +74,16 @@
 
 []: }}}1
 
+## Am I in any way connected to the Belastingdienst?
+
+  No, I don't work for them.  (I do pay taxes.)
+
 ## License
+
+  This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  General Public License for more details.
 
   GPLv3+ [1].
 
