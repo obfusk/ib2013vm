@@ -2,7 +2,7 @@
 
     File        : README.md
     Maintainer  : Felix C. Stegerman <flx@obfusk.net>
-    Date        : 2014-01-25
+    Date        : 2014-01-28
 
     Copyright   : Copyright (C) 2014  Felix C. Stegerman
 
@@ -11,9 +11,15 @@
 ## Description
 []: {{{1
 
-  dev-vm-ruby - ruby development VM (scripts)
+  ib2013vm - vm for aangifte inkomstenbelasting 2013
+
+  A set of scripts to create and run a (Ubuntu) VM for the "aangifte
+  inkomstenbelasting 2013" program.  For those who need to use it, but
+  don't want to run non-free programs on their computer directly.
 
 ### Security
+
+[]: {{{2
 
   **NB**: vagrant **is very insecure** by default.  Older versions run
   ssh listening on all IP addresses -- newer versions still listen on
@@ -33,22 +39,37 @@
   anyone on your local network with older versions of vagrant) could
   still compromise the VM using the default keys/password.
 
+[]: }}}2
+
 ### Usage
+
+#### Install
 
   NB: you should install virtualbox and vagrant via your package
   manager if possible.
 
   1.  Install [virtualbox](https://www.virtualbox.org)
   2.  Install [vagrant](https://www.vagrantup.com)
-  3.  Download the .zip or `git clone`
-  4.  Modify the `Vagrantfile` (if needed)
-  5.  If you don't already have a pre-built dev-vm-ruby base box, run
-      `./build.sh` (this will also generate an ssh key pair)
-  6.  `vagrant box add dev-vm-ruby /path/to/.box` the base box
-  7.  `vagrant up`
-  8.  `vagrant ssh -c 'byobu bash'`
-  9.  ???
-  10. profit!
+  3.  Download and unpack the .zip
+  4.  Run "Install ib2013vm" (ib2013vm-install.desktop)
+
+#### Use
+
+  1.  Run "Run ib2013vm" (ib2013vm-run.desktop)
+  2.  Use the `shared` folder to share files with the VM
+  3.  Enter a command (to run in the VM):
+        - `ib2013vm`  runs the "aangifte inkomstenbelasting 2013" program
+        - `firefox`   runs firefox
+        - `shell`     runs a shell
+        - `quit`      powers down the VM
+
+#### Remove
+
+  *   Run "Remove ib2013vm" (ib2013vm-remove.desktop)
+
+#### Update
+
+  *   Remove, redownload, reinstall.
 
 []: }}}1
 
