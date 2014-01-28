@@ -1,6 +1,6 @@
 cfg = {
   :priv_key => './id_rsa',
-  :shares   => { 'shared' => '/home/vagrant/shared' }
+  :shares   => { 'shared' => '/home/vagrant/shared' },
   :custom   => ['modifyvm', :id, '--memory', 512],
 }
 
