@@ -2,6 +2,8 @@
 
 set -xe
 
+export LC_ALL=C
+
 trap 'read -p "press return"' EXIT
 
 vagrant up
