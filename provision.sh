@@ -11,7 +11,7 @@ ib_sum+='eb670426e4abc2167099279d2151e8721f38f6f58b658cc999e508ae875ea729'
 ib_tgz=ib2013.tgz
 
 packages=(
-  firefox
+  firefox mc
 )
 
 rm_packages=(
