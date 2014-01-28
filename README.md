@@ -11,7 +11,7 @@
 ## Description
 []: {{{1
 
-  ib2013vm - vm for aangifte inkomstenbelasting 2013
+  ib2013vm - VM for aangifte inkomstenbelasting 2013
 
   A set of scripts to create and run a (Ubuntu) VM for the "aangifte
   inkomstenbelasting 2013" program.  For those who need to use it, but
