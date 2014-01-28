@@ -58,10 +58,10 @@
   1.  Run "Run ib2013vm" (ib2013vm-run.desktop)
   2.  Use the `shared` folder to share files with the VM
   3.  Enter a command (to run in the VM):
-        - `ib2013vm`  runs the "aangifte inkomstenbelasting 2013" program
-        - `firefox`   runs firefox
-        - `shell`     runs a shell
-        - `quit`      powers down the VM
+        - `ib2013`  runs the "aangifte inkomstenbelasting 2013" program
+        - `firefox` runs firefox
+        - `shell`   runs a shell
+        - `quit`    quits
 
 #### Remove
 
@@ -69,7 +69,8 @@
 
 #### Update
 
-  *   Remove, redownload, reinstall.
+  *   Remove, redownload, reinstall.  You may want to keep the base
+      box when removing to speed up the reinstall.
 
 []: }}}1
 
