@@ -58,11 +58,11 @@
   1.  Run "Run ib2013vm" (ib2013vm-run.desktop)
   2.  Use the `shared` folder to share files with the VM
   3.  Enter a command (to run in the VM):
-        - `ib2013`  runs the "aangifte inkomstenbelasting 2013" program
-        - `firefox` runs firefox
-        - `mc`      runs the midnight commander file manager
-        - `shell`   runs a shell
-        - `quit`    quits
+    - `ib2013`  runs the "aangifte inkomstenbelasting 2013" program
+    - `firefox` runs firefox
+    - `mc`      runs the midnight commander file manager
+    - `shell`   runs a shell
+    - `quit`    quits
 
 #### Remove
 
