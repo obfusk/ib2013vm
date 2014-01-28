@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Install ib2013vm
+Exec=./install.sh
+Terminal=true
+Type=Application
+StartupNotify=true
+Icon=add

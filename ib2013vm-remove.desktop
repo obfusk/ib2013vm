@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Remove ib2013vm
+Exec=./remove.sh
+Terminal=true
+Type=Application
+StartupNotify=true
+Icon=remove

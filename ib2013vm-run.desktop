@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Run ib2013vm
+Exec=./run.sh
+Terminal=true
+Type=Application
+StartupNotify=true
+Icon=virtualbox
