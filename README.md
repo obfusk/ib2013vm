@@ -2,7 +2,7 @@
 
     File        : README.md
     Maintainer  : Felix C. Stegerman <flx@obfusk.net>
-    Date        : 2014-01-28
+    Date        : 2014-01-29
 
     Copyright   : Copyright (C) 2014  Felix C. Stegerman
 
@@ -41,6 +41,13 @@
 
 []: }}}2
 
+  Additionally, the VNC server port will be forwarded to localhost
+  (port 5901).  You should probably use a firewall and a single-user
+  system to keep others out.
+
+  And make sure you don't run any services on your computer or network
+  that you don't want the VM to be able to access.
+
 ### Usage
 
 #### Install
@@ -55,14 +62,23 @@
 
 #### Use
 
+[]: {{{2
+
   1.  Run "Run ib2013vm" (ib2013vm-run.desktop)
   2.  Use the `shared` folder to share files with the VM
   3.  Enter a command (to run in the VM):
-    - `ib2013`  runs the "aangifte inkomstenbelasting 2013" program
-    - `firefox` runs firefox
-    - `mc`      runs the midnight commander file manager
-    - `shell`   runs a shell
-    - `quit`    quits
+    - `start`   start the VNC server
+    - `stop`    stop  the VNC server
+    - `ib2013`  run   "aangifte inkomstenbelasting 2013"  (in VNC)
+    - `firefox` run   firefox                             (in VNC)
+    - `mc`      run   the midnight commander file manager (in VNC)
+    - `xterm`   run   xterm                               (in VNC)
+    - `shell`   run   a shell
+    - `quit`    quit
+ 4.   Connect to the VNC server at localhost:5901 using a remote
+      desktop viewer
+
+[]: }}}2
 
 #### Remove
 

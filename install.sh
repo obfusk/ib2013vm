@@ -27,6 +27,8 @@ rm shared/id_rsa.pub
 
 export OLD_KEY=no
 
+vagrant ssh-config > .ssh-config
+
 read -r -p 'Run? [y/N] ' q
 if [[ "$q" == [yY]* ]]; then
   exec ./run.sh

@@ -16,7 +16,6 @@ f = lambda do |config|
   if ENV['OLD_KEY'] != 'yes'
     config.ssh.private_key_path = cfg[:priv_key]
   end
-  config.ssh.forward_x11 = true
   config.vm.provision :shell, :path => 'provision.sh'
 end
 

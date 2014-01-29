@@ -4,18 +4,27 @@ set -xe
 
 export LC_ALL=C
 
+p='[start|stop|ib2013|firefox|mc|xterm|shell|quit]> '
+
 trap 'read -p "press return"' EXIT
 
 vagrant up
 
-while read -r -p '[ib2013|firefox|mc|shell|quit]> ' command; do
+ssh -F .ssh-config default -N -L 5901:localhost:5901 & pid="$!"
+
+while read -r -p "$p" command; do
   case "$command" in
-    ib2013)   vagrant ssh -c 'cd ib2013/bin; ./ib2013ux'  ;;
-    firefox)  vagrant ssh -c firefox                      ;;
-    mc)       vagrant ssh -c mc                           ;;
-    shell)    vagrant ssh                                 ;;
-    quit)     break                                       ;;
+    start)    vagrant ssh -c 'vncserver :1 ; DISPLAY=:1 openbox'  & ;;
+    stop)     vagrant ssh -c 'vncserver -kill :1'                   ;;
+    ib2013)   vagrant ssh -c 'DISPLAY=:1 ./ib2013.sh'             & ;;
+    firefox)  vagrant ssh -c 'DISPLAY=:1 firefox'                 & ;;
+    mc)       vagrant ssh -c 'DISPLAY=:1 xterm -e mc'             & ;;
+    xterm)    vagrant ssh -c 'DISPLAY=:1 xterm'                   & ;;
+    shell)    vagrant ssh                                           ;;
+    quit)     break                                                 ;;
   esac
 done
+
+kill "$pid"
 
 vagrant halt
