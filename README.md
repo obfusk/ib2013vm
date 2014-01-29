@@ -75,7 +75,7 @@
     - `xterm`   run   xterm                               (in VNC)
     - `shell`   run   a shell
     - `quit`    quit
- 4.   Connect to the VNC server at localhost:5901 using a remote
+  4.  Connect to the VNC server at localhost:5901 using a remote
       desktop viewer
 
 []: }}}2
