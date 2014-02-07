@@ -31,6 +31,7 @@ cat <<__END | sed 's!^  !!' | sudo -H -u vagrant bash -xe
   wget "$ib_url" -O "$ib_tgz"
   if ! test "\$( sha512sum "$ib_tgz" | awk '{print \$1}' )" = "$ib_sum"; then
     echo 'sha512sum does not match' >&2
+    rm "$ib_tgz"
     exit 1
   fi
   tar xf "$ib_tgz"
